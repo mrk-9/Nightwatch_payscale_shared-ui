@@ -1,0 +1,96 @@
+@import '~@ps/payscale-design/lib/styles/_variables.scss';
+
+$range-bar-height: 40px;
+$range-thumb-width: 4px;
+$range-thumb-height: 50px;
+
+.range-pen-card {
+    position: relative;
+    z-index: 0;
+}
+
+.range-pen-card__blurb {
+    color: $c11-6;
+    font-size: $font-size-small;
+    font-weight: $font-weight-regular;
+    margin-bottom: $spacing-small;
+}
+
+.range-pen-card__range-labels {
+    color: $c11-6;
+    font-size: $font-size-small;
+    font-weight: $font-weight-regular;
+}
+
+.range-pen-card__range-min {
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+}
+
+.range-pen-card__range-max {
+    display: inline-block;
+    text-align: right;
+    width: 50%;
+}
+
+.range-pen-card__viz-bar-container {
+    line-height: 0;
+    position: relative;
+}
+
+.range-pen-card__viz-bar {
+    align-items: center;
+    background-color: $c4;
+    bottom: ($range-thumb-height - $range-bar-height) / 2;
+    display: flex;
+    height: $range-bar-height;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 0;
+}
+
+.range-pen-card__viz-thumb {
+    background-color: $c4-xlight;
+    display: inline-block;
+    height: $range-thumb-height;
+    width: $range-thumb-width;
+}
+
+.range-pen-card__viz-thumb-container {
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+}
+
+.range-pen-card__viz-thumb-hack {
+    // Ugly reality of CSS: inline-block div inside a block div results
+    // in whitespace at end/bottom. This ensures it takes up no space
+    line-height: 0;
+}
+
+.range-pen-card__viz-thumb-label {
+    color: #fff;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: $font-weight-bold;
+    padding: 0 $spacing-medium;
+    position: relative;
+}
+
+.range-pen-card__viz.invalid {
+    .range-pen-card__viz-bar {
+        background-color: $c11-1;
+    }
+}
+
+.range-pen-card__viz.hide-thumb {
+    .range-pen-card__viz-thumb-container {
+        visibility: hidden;
+    }
+
+    .range-pen-card__viz-thumb-label {
+        display: none;
+    }
+}

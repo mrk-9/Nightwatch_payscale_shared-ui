@@ -1,0 +1,224 @@
+@import '~@ps/payscale-design/lib/styles/variables';
+
+.tree-chart {
+    align-items: center;
+    display: flex;
+    font-family: Roboto;
+    line-height: 1.3;
+    position: relative;
+
+    @media (min-width: 576px) {
+        &--padding-top {
+            padding-top: 120px;
+        }
+
+        &--padding-bottom {
+            padding-bottom: 100px;
+        }
+    }
+    
+    &__left-container {
+        z-index: 2;
+    }
+    
+    &__lines {
+        box-sizing: border-box;
+        height: 300px;
+        padding-top: 25px;
+        position: relative;
+        transform: translateX(-5px);
+        width: 130px;
+        z-index: 0;
+
+        svg {
+            position: absolute;
+        }
+
+        &--sm {
+            z-index: 1;
+        }
+
+        &--md {
+            z-index: 2;
+        }
+
+        &--lg {
+            z-index: 3;
+        }
+
+        &--up {
+            transform: translateY(15px);
+        }
+
+        &--straight {
+            &.tree-chart__lines--sm {
+                transform: translateY(124px);
+            }
+
+            &.tree-chart__lines--md {
+                transform: translateY(121px);
+            }
+            
+            &.tree-chart__lines--lg {
+                transform: translateY(120px);
+            }
+        }
+
+        &--down {
+            transform: translateY(126px);
+            
+            &.tree-chart__lines--lg {
+                transform: translateY(120px);
+            }
+        }
+    }
+
+    &__back {
+        color: $c4;
+        cursor: pointer;
+        font-size: 14px;
+        margin: 10px 0 0 -10px;
+        width: 60px;
+
+        &:hover {
+            color: $c4-xdark;
+        }
+    }
+
+    &__leaves {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        justify-content: space-between;
+
+        &--single {
+            justify-content: center;
+        }
+    }
+
+    &__leaf_container {
+        align-items: center;
+        display: flex;
+    }
+
+    &__leaf {
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid $c2-xdark;
+        border-radius: 35px;
+        box-sizing: border-box;
+        color: $cf-12;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        font-weight: 700;
+        height: 64px;
+        justify-content: center;
+        padding: 6px 25px;
+        position: relative;
+        text-align: center;
+        width: 181px;
+        z-index: 5;
+
+        &--link {
+            color: $c4;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #e5f2f2;
+            }
+        }
+
+        &--lg {
+            border-color: $c2-xdark;
+        }
+
+        &--md {
+            border-color: $c2-dark;
+        }
+
+        &--sm {
+            border-color: $c2;
+        }
+
+        .icon-right {
+            color: $cf-12;
+            position: absolute;
+            right: 8px;
+        }
+    }
+
+    &__root {
+        background-color: #fff;
+        border: solid 10px $c2-xdark;
+        border-radius: 18px;
+        box-sizing: border-box;
+        height: 35px;
+        width: 35px;
+        z-index: 5;
+
+        &__name {
+            color: $cf-12;
+            font-size: 14px;
+            font-weight: 700;
+            margin: 35px 0 0 -10px;
+        }
+    }
+
+    &__salaries {
+        bottom: -25px;
+        font-size: 14px;
+        font-weight: 400;
+        margin-top: 56px;
+        position: absolute;
+        text-align: center;
+
+        span {
+            color: #a4a1aa;
+        }
+    }
+
+    &__comp {
+        color: #817c89;
+        font-weight: 400;
+    }
+
+    &__legend {
+        border: 1px solid #d9d9dd;
+        color: $cf-12;
+        display: flex;
+        flex-wrap: wrap;
+        font-family: Roboto;
+        font-size: 14px;
+        justify-content: space-between;
+        margin-top: 30px;
+        padding: 18px;
+    }
+
+    &__legend-row {
+        align-items: center;
+        display: flex;
+    }
+
+    &__legend-color {
+        margin-right: 12px;
+
+        &--large {
+            background-color: $c2-xdark;
+            height: 18px;
+            width: 18px;
+        }
+
+        &--medium {
+            background-color: $c2-dark;
+            height: 12px;
+            width: 18px;
+        }
+
+        &--small {
+            background-color: $c2;
+            height: 6px;
+            width: 18px;
+        }
+    }
+}

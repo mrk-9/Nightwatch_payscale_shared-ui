@@ -1,0 +1,33 @@
+@import '~@ps/payscale-design/lib/styles/_variables.scss';
+
+.pdf-footer {
+    align-items: flex-end;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 0 $spacing-large;
+}
+
+.pdf-footer__meta {
+    color: $c11-light;
+    font-size: 9px;
+    font-weight: 400;
+}
+
+.pdf-footer__divider {
+    background-color: $c11-light;
+    display: inline-block;
+    height: 11px;
+    margin: 0 $spacing-medium;
+    position: relative;
+    top: 2px;
+    width: 1px;
+}
+
+.pdf-footer__logo {
+    padding: $spacing-small 0 0 0;
+
+    img {
+        height: 40px;
+    }
+}

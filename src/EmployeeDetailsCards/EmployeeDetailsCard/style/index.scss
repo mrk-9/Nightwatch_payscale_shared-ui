@@ -1,0 +1,39 @@
+@import '~@ps/payscale-design/lib/styles/_variables.scss';
+
+.ee-details-card {
+    margin: 0;
+    padding: $spacing-small 0;
+}
+
+.ee-details-card__list-item {
+    list-style: none;
+}
+
+.ee-details-card__item {
+    display: flex;
+    padding: $spacing-small 0;
+}
+
+.ee-details-card__item-icon {
+    color: $c11-4;
+    flex: 0 0 auto;
+    font-size: 20px;
+    margin-right: $spacing-large;
+}
+
+.ee-details-card__item-content {
+    flex: 1;
+    overflow: hidden;
+}
+
+.ee-details-card__item-header {
+    color: $c11-6;
+    font-size: $font-size-small;
+}
+
+.ee-details-card__item-value {
+    color: $c11-9;
+    font-size: $font-size-small;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

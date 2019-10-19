@@ -1,0 +1,28 @@
+@import '~@ps/payscale-design/lib/styles/_variables.scss';
+
+.market-trends-card__summary {
+    color: $c11-6;
+    font-size: 12px;
+}
+
+.market-trends-card__summary__date-blurb {
+    color: $c11-9;
+    font-size: 14px;
+    padding-right: $spacing-xlarge;
+
+    .reference-date {
+        font-weight: bold;
+        white-space: nowrap;
+    }
+}
+
+.market-trends-card__summary__value-actual {
+    color: $c11-5;
+    font-size: 14px;
+}
+
+.market-trends-card__summary__value-percent {
+    color: $c9;
+    font-size: 36px;
+    font-weight: 100;
+}

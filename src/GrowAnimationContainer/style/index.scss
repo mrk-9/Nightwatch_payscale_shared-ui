@@ -1,0 +1,34 @@
+$animation-duration: 200ms;
+
+.outer-grow-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height $animation-duration ease;
+}
+
+.inner-grow-container {
+    overflow: auto; // want child margins to count in our height
+    transition-duration: $animation-duration;
+
+    &.grow-down {
+        transform: translateY(-100%);
+        transition-property: transform;
+
+        &.show {
+            transform: translateY(0);
+        }
+    }
+
+    &.fade {
+        opacity: 0;
+        transition-property: opacity;
+
+        &.show {
+            opacity: 1;
+        }
+    }
+
+    &.grow-down.fade {
+        transition-property: opacity, transform;
+    }
+}

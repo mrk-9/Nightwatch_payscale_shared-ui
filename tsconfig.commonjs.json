@@ -1,0 +1,12 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "declaration": true,
+        "module": "commonjs",
+        "jsx": "react",
+        "outDir": "lib-commonjs",
+        "removeComments": true,
+        "sourceMap": false
+    },
+    "exclude": ["node_modules", "src/**/*.spec.*", "src/_mocks/*"],
+}

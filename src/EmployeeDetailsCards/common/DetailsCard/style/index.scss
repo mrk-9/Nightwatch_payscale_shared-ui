@@ -1,0 +1,17 @@
+@import '~@ps/payscale-design/lib/styles/_variables.scss';
+
+.details-card {
+    color: $c11-10;
+    padding: $spacing-large 0;
+}
+
+.details-card__header {
+    font-size: 13.25px;
+    font-weight: $font-weight-bold;
+    line-height: 20px;
+}
+
+.details-card__body {
+    font-size: $font-size-small;
+    padding: $spacing-xsmall 0 0 0;
+}

@@ -1,0 +1,47 @@
+@import '~@ps/payscale-design/lib/styles/_variables.scss';
+
+.cover-page {
+    text-align: center;
+}
+
+.cover-page__header {
+    text-align: left;
+
+    img {
+        max-height: 60px;
+    }
+}
+
+.cover-page__title {
+    color: $c2;
+    font-size: 36px;
+    font-weight: 300;
+    margin-top: $spacing-xlarge;
+}
+
+.cover-page__subtitle {
+    color: $c11;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.cover-page__separator {
+    background-color: #f4f4f4;
+    height: 2px;
+    margin: $spacing-xlarge auto;
+    width: 300px;
+}
+
+.cover-page__details {
+    display: flex;
+    justify-content: center;
+}
+
+.cover-page-detail {
+    flex: 1;
+    max-width: 125px;
+}
+
+.cover-page__content {
+    margin-top: 100px;
+}

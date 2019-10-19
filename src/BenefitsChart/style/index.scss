@@ -1,0 +1,140 @@
+@import '~@ps/payscale-design/lib/styles/_variables.scss';
+
+.employee-benefits-chart {
+    $benefits-dark-blue: #145479;
+    $benefits-blue: #5ac6ca;
+    $benefits-light-blue: #a3dfe2;
+
+    display: flex;
+    margin-top: $spacing-large;
+
+    .tcc-panel__title,
+    .company-panel__title {
+        font-size: $font-size-small;
+        line-height: $line-height-base;
+        text-align: right;
+    }
+
+    .tcc-panel__value,
+    .company-panel__value {
+        color: $c11-8;
+        font-size: $font-size-small;
+        font-weight: $font-weight-bold;
+        padding-left: 30px;
+    }
+
+    .tcc-panel__title {
+        color: $benefits-dark-blue;
+        width: 55%;
+    }
+
+    .tcc-panel__line {
+        border-color: $benefits-dark-blue;
+        margin-top: 24px;
+    }
+
+    .company-panel__title,
+    .company-panel__line {
+        border-color: $benefits-blue;
+        color: $benefits-blue;
+    }
+
+    .company-panel__value,
+    .tcc-panel__value {
+        width: 45%;
+    }
+
+    .tcc-panel__line,
+    .company-panel__line {
+        border-top: 2px dashed;
+    }
+
+    .company-panel__line {
+        flex-grow: 1;
+    }
+
+    .tcc-panel__header,
+    .company-panel__header,
+    .employee-benefits-chart__benefit {
+        display: flex;
+    }
+
+    .company-panel__header {
+        align-items: center;
+    }
+
+    .employee-benefits-chart__tcc-panel,
+    .employee-benefits-chart__company-panel {
+        width: 100%;
+    }
+
+    .employee-benefits-chart__tcc-panel {
+        transform: translate(43px, 0);
+    }
+
+    .employee-benefits-chart__company-contributions,
+    .employee-benefits-chart__total-cash {
+        border-radius: 2px;
+    }
+
+    .employee-benefits-chart__company-contributions {
+        background-color: $benefits-light-blue;
+    }
+
+    .employee-benefits-chart__total-cash {
+        background-color: $benefits-dark-blue;
+        margin-top: 4px;
+    }
+
+    .employee-benefits-chart__benefit-items {
+        color: $c11-8;
+        font-size: $font-size-xsmall;
+        padding-top: $spacing-xlarge;
+
+        .employee-benefits-chart__benefit-title {
+            font-weight: $font-weight-regular;
+            text-align: right;
+            width: 55%;
+        }
+
+        .employee-benefits-chart__benefit-value {
+            padding-left: 30px;
+            width: 45%;
+        }
+    }
+
+    .employee-benefits-chart__bar-chart {
+        margin-top: 22px;
+    }
+
+    .employee-benefits-chart__uncalculated-panel {
+        padding-top: $spacing-xlarge;
+
+        .uncalculated-panel__header {
+            color: $c11-5;
+            font-size: $font-size-xsmall;
+            font-weight: $font-weight-regular;
+            padding-left: $spacing-large;
+        }
+
+        .uncalculated-panel__container {
+            background-color: $c11-1;
+            padding-bottom: $spacing-medium;
+            padding-top: $spacing-small;
+            width: 220px;
+        }
+
+        .uncalculated-panel__title {
+            color: $c11-6;
+            font-size: $font-size-xsmall;
+            font-weight: $font-weight-bold;
+            padding-left: $spacing-large;
+        }
+
+        .uncalculated-panel__paid-leave {
+            .employee-benefits-chart__benefit-items {
+                padding-top: $spacing-xsmall;
+            }
+        }
+    }
+}

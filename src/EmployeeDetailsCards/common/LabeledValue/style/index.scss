@@ -1,0 +1,18 @@
+@import '~@ps/payscale-design/lib/styles/_variables.scss';
+
+.labeled-value {
+    display: flex;
+}
+
+.labeled-value__label {
+    color: $c11-6;
+    flex: 1 1 0%;
+    font-size: 14px;
+    order: 0;
+    padding-right: $spacing-medium;
+}
+
+.labeled-value__value {
+    flex: 0 0 auto;
+    order: 1;
+}

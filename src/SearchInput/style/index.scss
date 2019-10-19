@@ -1,0 +1,79 @@
+@import '~@ps/payscale-design/lib/styles/_variables.scss';
+
+.search-input {
+    align-items: center;
+    color: $c11-8;
+    display: flex;
+    padding: $spacing-xsmall $spacing-xsmall $spacing-xsmall $spacing-small;
+
+    &:focus-within {
+        outline-color: Highlight;
+        outline-style: solid;
+        outline-width: 2px;
+    }
+
+    // WebKit gets its native focus styles
+    @media (-webkit-min-device-pixel-ratio: 0) { // stylelint-disable-line media-feature-name-no-vendor-prefix
+        &:focus-within {
+            outline-color: -webkit-focus-ring-color;
+            outline-offset: -2px;
+            outline-style: auto;
+            outline-width: 5px;
+        }
+    }
+}
+
+.search-input .icon-search {
+    flex: 0 0 auto;
+}
+
+.search-input .icon-cancel {
+    padding: 1px;
+
+    &:hover {
+        color: $c11-6;
+    }
+}
+
+.search-input__input {
+    border: 0;
+    flex: 1;
+    font-size: 14px;
+    margin: 0;
+    margin-left: $spacing-small;
+    min-width: 0; // Safari and others seem to give a min width to input boxes
+    padding: 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    // for IE11, remove 'clear' button as we have our own
+    &::-ms-clear {
+        display: none;
+    }
+}
+
+.search-input__clear-btn {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+
+    &.hidden {
+        visibility: hidden;
+    }
+}
+
+.search-input i {
+    color: $c11-3;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1;
+    margin: 0;
+
+    &::before {
+        margin: 0;
+    }
+}

@@ -1,0 +1,16 @@
+@import '~@ps/payscale-design/lib/styles/_variables.scss';
+
+.perf-rating-card__value {
+    margin-bottom: $spacing-xsmall;
+}
+
+.perf-rating-card__rating {
+    color: $c9;
+    font-size: 36px;
+    font-weight: 100;
+    margin-bottom: $spacing-xsmall;
+}
+
+.perf-rating-card__rating-desc {
+    font-weight: $font-weight-bold;
+}

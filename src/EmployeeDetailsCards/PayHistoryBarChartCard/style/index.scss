@@ -1,0 +1,75 @@
+@import '~@ps/payscale-design/lib/styles/_variables.scss';
+
+// TODO: Remove and use PXL vars once implemented
+$pay-history-gradient-1: #145479;
+$pay-history-gradient-2: #327095;
+$pay-history-gradient-3: #388fa5;
+$pay-history-gradient-4: #69c4ce;
+$pay-history-gradient-5: #a3dfe2;
+
+.pay-history-bar-chart-card {
+    .pay-history-bar-chart-card__viz {
+        height: 200px;
+
+        .barchart__bar {
+            // TODO: Backport rounded edges to base barchart after full redesign
+            &.barchart__bar-chunk-first {
+                border-radius: 2px 2px 0 0;
+            }
+
+            &.barchart__bar-chunk-last {
+                border-radius: 0 0 2px 2px;
+            }
+
+            // If only 1 chunk exists, round all corners
+            &.barchart__bar-chunk-first.barchart__bar-chunk-last {
+                border-radius: 2px;
+            }
+
+            &.barchart__bar-chunk-1 {
+                background-color: $pay-history-gradient-1;
+            }
+
+            &.barchart__bar-chunk-2 {
+                background-color: $pay-history-gradient-2;
+            }
+
+            &.barchart__bar-chunk-3 {
+                background-color: $pay-history-gradient-3;
+            }
+
+            &.barchart__bar-chunk-4 {
+                background-color: $pay-history-gradient-4;
+            }
+
+            &.barchart__bar-chunk-5 {
+                background-color: $pay-history-gradient-5;
+            }
+
+            &.barchart__bar--empty {
+                background-color: $c11-3;
+            }
+        }
+
+        .barchart__bar-column-padding {
+            flex: 0;
+            padding-left: 15px;
+        }
+
+        .barchart__cat-axis {
+            margin-top: 0;
+        }
+
+        .barchart__cat-axis-label {
+            font-size: $font-size-xsmall;
+        }
+
+        .barchart__bar-label {
+            overflow: initial;
+
+            span {
+                font-size: $font-size-xsmall;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.pdf-page {
+    height: 1000px;
+    margin: 40px 0 0;
+    overflow: hidden;
+    page-break-after: always;
+    page-break-inside: avoid;
+    position: relative;
+}
+
+.pdf-page__inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 774px;
+}

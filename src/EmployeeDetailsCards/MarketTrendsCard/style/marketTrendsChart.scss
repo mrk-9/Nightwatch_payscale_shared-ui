@@ -1,0 +1,26 @@
+@import '~@ps/payscale-design/lib/styles/_variables.scss';
+
+$chart-height: 200px;
+
+.market-trends-card__chart {
+    height: $chart-height;
+    margin-top: $spacing-medium;
+
+    .barchart__cat-axis-label,
+    .barchart__quant-axis-label {
+        color: $c11-6;
+        font-size: 12px;
+    }
+
+    .quant-axis-label.zero {
+        font-weight: $font-weight-bold;
+    }
+
+    .barchart__bar {
+        background-color: $c1;
+    }
+
+    .barchart__bar-column.negative .barchart__bar {
+        background-color: $c1-xlight;
+    }
+}

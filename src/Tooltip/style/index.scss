@@ -1,0 +1,27 @@
+@import '~@ps/payscale-design/lib/styles/_variables.scss';
+
+.tooltip__wrapper {
+    &.tooltip__default {
+        &.border {
+            background-color: #fff;
+            border: 1px solid $c1-xlight;
+            color: #000;
+
+            &.place-top::before {
+                border-top-color: $c1-xlight;
+            }
+
+            &.place-left::before {
+                border-left-color: $c1-xlight;
+            }
+
+            &.place-right::before {
+                border-right-color: $c1-xlight;
+            }
+
+            &.place-bottom::before {
+                border-bottom-color: $c1-xlight;
+            }
+        }
+    }
+}

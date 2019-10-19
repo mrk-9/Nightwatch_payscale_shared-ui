@@ -1,0 +1,13 @@
+@import '~@ps/payscale-design/lib/styles/_variables.scss';
+
+.pay-history-summary-card {
+    .pay-history-summary-card__percentage-description {
+        font-weight: $font-weight-bold;
+        padding-top: $spacing-large;
+    }
+
+    .pay-history-summary-card__percentage {
+        font-size: 36px;
+        font-weight: $font-weight-light;
+    }
+}

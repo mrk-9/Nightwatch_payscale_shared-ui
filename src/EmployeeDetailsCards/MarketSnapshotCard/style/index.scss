@@ -1,0 +1,28 @@
+@import '~@ps/payscale-design/lib/styles/_variables.scss';
+
+.market-snapshot-card__description {
+    color: $c11-5;
+}
+
+.market-snapshot-card__table {
+    font-size: $font-size-small;
+    padding: $spacing-xsmall 0;
+    text-align: left;
+}
+
+.market-snapshot-card__table-row {
+    .percentile {
+        font-size: $font-size-small;
+        font-weight: $font-weight-bold;
+        width: 20%;
+    }
+
+    .tcc {
+        width: 40%;
+    }
+
+    .base-pay {
+        width: 40%;
+    }
+}
+

@@ -1,0 +1,28 @@
+@import '~@ps/payscale-design/lib/styles/_variables.scss';
+
+.autocomplete {
+    position: relative; // needed to make menu same width as input
+}
+
+.autocomplete__menu {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 250px;
+    overflow: auto;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.autocomplete__item {
+    cursor: pointer;
+    padding: $spacing-small $spacing-large;
+    transition: background-color 200ms;
+
+    &:hover,
+    &:active,
+    &.active {
+        background-color: $c11-1;
+    }
+}

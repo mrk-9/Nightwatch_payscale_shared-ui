@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "jsx": "react",
+        "outDir": "lib",
+        "removeComments": true,
+        "sourceMap": false
+    },
+    "exclude": ["node_modules", "src/**/*.spec.*", "src/_mocks/*"],
+    "extends": "./tsconfig.json"
+}

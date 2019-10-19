@@ -1,0 +1,56 @@
+@import '~@ps/payscale-design/lib/styles/_variables.scss';
+
+$pill-spacing: 4px;
+
+.selectable-items {
+    .items-section {
+        padding: $spacing-large 0;
+    }
+
+    .items-header {
+        font-size: 13.25px;
+        font-weight: 700;
+        line-height: 20px;
+        margin-bottom: $spacing-xsmall;
+    }
+
+    .selectable-item {
+        background-color: #fff;
+        border: 2px solid $c11-2;
+        border-radius: 20px;
+        color: $c6-dark;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        margin: 2px $pill-spacing 2px 0; // purposefully non-PXL
+        overflow: hidden;
+        padding: $spacing-xsmall $spacing-small;
+        text-overflow: ellipsis;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        white-space: nowrap;
+
+        &.active {
+            background-color: $c6-light;
+            border-color: $c6-light;
+            color: #fff;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    .item-container {
+        display: flex;
+        flex-wrap: wrap;
+        // account for margin on right of pills, but still take up full width
+        margin-right: -$pill-spacing;
+    }
+
+    .autocomplete {
+        margin: 0 0 $spacing-small;
+    }
+}

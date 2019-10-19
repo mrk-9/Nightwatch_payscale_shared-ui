@@ -1,0 +1,39 @@
+@import '~@ps/payscale-design/lib/styles/_variables.scss';
+
+.range-dist-card__desc-position {
+    font-weight: $font-weight-bold;
+}
+
+.range-dist-card__viz {
+    height: 200px;
+    padding: $spacing-large 0;
+
+    .barchart__cat-axis-label {
+        color: $c11-9;
+    }
+
+    .barchart__bar-label {
+        font-size: 18px;
+    }
+}
+
+.range-dist-card__viz__bar--out-range .barchart__bar {
+    background-color: $c11-3;
+}
+
+.range-dist-card__viz__bar--in-range .barchart__bar {
+    background-color: $c4-xlight;
+}
+
+.range-dist-card__viz__bar--out-range--active,
+.range-dist-card__viz__bar--in-range--active {
+    font-weight: $font-weight-bold;
+
+    .barchart__bar-label {
+        color: $c4;
+    }
+
+    .barchart__bar {
+        background-color: $c4;
+    }
+}

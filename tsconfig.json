@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+        "allowJs": false,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": ".",
+        "jsx": "preserve",
+        "module": "es6",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "outDir": "build",
+        "sourceMap": true,
+        "target": "es6",
+        "paths": {
+            "mocks/*": ["src/_mocks/*"]
+        }
+    },
+    "exclude": ["node_modules"],
+    "include": ["src/**/*"],
+
+    "awesomeTypescriptLoaderOptions": {
+        "useBabel": true,
+        "useCache": true,
+        "cacheDirectory": "build/.awcache"
+    }
+}

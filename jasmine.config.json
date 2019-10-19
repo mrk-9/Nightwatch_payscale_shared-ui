@@ -1,0 +1,11 @@
+{
+    "spec_dir": "./",
+    "spec_files": [
+        "dist/test.js"
+    ],
+    "helpers": [
+        "test.globals.js"
+    ],
+    "stopSpecOnExpectationFailure": false,
+    "random": false
+}
